@@ -91,8 +91,14 @@ namespace SuperBank
 
         public string listTrans() 
         {
-            return allTrans.ToString();
+            string list;
 
+            foreach (Transaction transaction in allTrans)
+            {
+                list.Append("trans; " + transaction.date.ToString()  + "for ammount "+ transaction.amount
+                    + "("+transaction.note")"+"\n");
+            }
+            return list;
         }
     }
 

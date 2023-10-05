@@ -14,7 +14,7 @@ namespace SuperBank
 
         public string note { get; }
 
-        public DateTime Date { get; }
+        public DateTime date { get; }
 
 
 
@@ -25,7 +25,7 @@ namespace SuperBank
 
             this.note = note;
 
-            this.Date = date;
+            this.date = date;
 
         }
     }
